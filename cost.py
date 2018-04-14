@@ -1,4 +1,2 @@
 def charge(seconds, rate):
-    cost = seconds / 3600
-    cost = cost * rate
-    return round(cost,2)
+    return round((seconds / 3600) * rate), 2)

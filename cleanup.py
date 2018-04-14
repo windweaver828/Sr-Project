@@ -4,8 +4,7 @@ from random import gauss, randint
 def biased_random(minimum, mean, maximum, stdev):
     value = gauss(mean, stdev)
     if minimum < value < maximum:
-        return float("%.2f" % value)
-    else: value = gauss(mean, stdev)
+        value = float("%.2f" % value)
     return value
 
 def port(n, values):

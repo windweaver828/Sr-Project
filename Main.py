@@ -11,21 +11,17 @@ Options:
     -v, --version       show program's version number and exit
 """
 
-import os
-import sys
+# import docopt for the above cmdline functionality to work
 from keith import Process
 import generatejob
 
 Process.chgProcessName('simulate')
-n=1
 
-def main(n):    
-    while n < 1000:
-        jobs = generatejob.job()
-        n+=1
-        for k, v in jobs.iteritems():
-            print(v)
-        
+
+def main():
+    for _ in xrange(1, 1000)
+        for job in generatejob.job().values():
+            print(job)
+
 if __name__ == '__main__':    
-    main(n)
-    
+    main()
